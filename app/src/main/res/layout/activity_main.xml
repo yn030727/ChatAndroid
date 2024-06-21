@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.MainActivity">
+
+    <!--加载每一个Fragment的容器-->
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="72dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--底部导航栏和Fragment容器的分界线-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="#111111"
+        android:alpha="0.6"
+        app:layout_constraintEnd_toEndOf="@+id/fragment_container"
+        app:layout_constraintStart_toStartOf="@+id/fragment_container"
+        app:layout_constraintTop_toBottomOf="@+id/fragment_container"/>
+
+    <!--切换Fragment的底部导航栏-->
+    <LinearLayout
+        android:id="@+id/fragment_bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/fragment_container"
+        app:layout_constraintStart_toStartOf="@+id/fragment_container"
+        app:layout_constraintTop_toBottomOf="@+id/fragment_container" >
+
+        <!--对话界面的按钮-->
+        <LinearLayout
+            android:id="@+id/navigation_chat_layout"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:orientation="vertical">
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/navigation_chat_btn"
+                android:layout_width="69dp"
+                android:layout_height="55dp"
+                android:layout_gravity="center_vertical|center_horizontal"
+                app:lottie_rawRes="@raw/raw_chat"
+                app:lottie_loop="false"
+                app:lottie_autoPlay="false"
+                app:lottie_progress="0.15"/>
+            <TextView
+                android:id="@+id/navigation_chat_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="对话"
+                android:textColor="#111111"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <!--安卓库界面的按钮-->
+        <LinearLayout
+            android:id="@+id/navigation_android_layout"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:orientation="vertical">
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/navigation_android_btn"
+                android:layout_width="69dp"
+                android:layout_height="55dp"
+                android:layout_gravity="center_vertical|center_horizontal"
+                app:lottie_rawRes="@raw/raw_database"
+                app:lottie_loop="false"
+                app:lottie_autoPlay="false"
+                app:lottie_progress="0.15"/>
+            <TextView
+                android:id="@+id/navigation_android_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="安卓库"
+                android:textColor="#111111"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <!--社区界面的按钮-->
+        <LinearLayout
+            android:id="@+id/navigation_community_layout"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_width="0dp">
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/navigation_community_btn"
+                android:layout_width="69dp"
+                android:layout_height="55dp"
+                android:layout_gravity="center_vertical|center_horizontal"
+                app:lottie_rawRes="@raw/raw_community"
+                app:lottie_loop="false"
+                app:lottie_autoPlay="false"
+                app:lottie_progress="0.15"/>
+            <TextView
+                android:id="@+id/navigation_community_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="社区"
+                android:textColor="#111111"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <!--个人界面的按钮-->
+        <LinearLayout
+            android:id="@+id/navigation_person_layout"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:orientation="vertical">
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/navigation_person_btn"
+                android:layout_width="69dp"
+                android:layout_height="55dp"
+                android:layout_gravity="center_vertical|center_horizontal"
+                app:lottie_rawRes="@raw/raw_person"
+                app:lottie_loop="false"
+                app:lottie_autoPlay="false"
+                app:lottie_progress="0.15"/>
+            <TextView
+                android:id="@+id/navigation_person_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="个人"
+                android:textColor="#111111"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

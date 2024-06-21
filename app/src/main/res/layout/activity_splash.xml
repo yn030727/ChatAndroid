@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeeee"
+    tools:context=".ui.SplashActivity">
+    <TextView
+        android:id="@+id/splash_application_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="对话安卓   传递价值"
+        android:textColor="#111111"
+        android:textSize="35dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.150" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottie_splash_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:lottie_rawRes="@raw/raw_splash3"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.887"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/splash_application_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="ChatAndroid"
+        android:textColor="#111111"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/lottie_splash_image"
+        app:layout_constraintStart_toStartOf="@+id/lottie_splash_image"
+        app:layout_constraintTop_toBottomOf="@+id/lottie_splash_image" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
