@@ -1,4 +1,4 @@
-package com.example.chatandroid.ui.androidbase
+package com.example.chatandroid.ui.component_androidbase
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -8,10 +8,7 @@ import androidx.constraintlayout.motion.widget.MotionLayout
 import androidx.fragment.app.Fragment
 import androidx.viewpager.widget.ViewPager
 import com.example.chatandroid.R
-import com.example.chatandroid.utils.ViewpagerHeader
 import com.google.android.material.tabs.TabLayout
-import com.google.android.material.tabs.TabLayout.Tab
-import com.google.android.material.tabs.TabLayout.TabView
 
 class AndroidBaseFragment(contentLayoutId: Int) : Fragment(contentLayoutId) {
     lateinit var viewpager: ViewPager

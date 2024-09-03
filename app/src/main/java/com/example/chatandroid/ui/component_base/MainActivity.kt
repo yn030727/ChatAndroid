@@ -1,4 +1,4 @@
-package com.example.chatandroid.ui
+package com.example.chatandroid.ui.component_base
 
 import android.annotation.SuppressLint
 import android.content.Intent
@@ -12,10 +12,10 @@ import androidx.fragment.app.Fragment
 import com.airbnb.lottie.LottieAnimationView
 import com.example.chatandroid.R
 import com.example.chatandroid.logic.network.AndroidBaseService2
-import com.example.chatandroid.ui.androidbase.AndroidBaseFragment
-import com.example.chatandroid.ui.chat.ChatFragment
-import com.example.chatandroid.ui.community.CommunityFragment
-import com.example.chatandroid.ui.individual.IndividualFragment
+import com.example.chatandroid.ui.component_androidbase.AndroidBaseFragment
+import com.example.chatandroid.ui.component_chat.ChatFragment
+import com.example.chatandroid.ui.component_community.CommunityFragment
+import com.example.chatandroid.ui.component_individual.IndividualFragment
 
 
 //View界面(只负责UI的展示)
@@ -39,6 +39,7 @@ class MainActivity : AppCompatActivity() {
     lateinit var androidFragment: Fragment
     lateinit var communityFragment: Fragment
     lateinit var individualFragment: Fragment
+    val viewModel = MainActivityViewModel(0, 1)
     val TAG: String = "Ning_MainActivity"
 
     @SuppressLint("MissingInflatedId")

@@ -1,4 +1,4 @@
-package com.example.chatandroid.ui
+package com.example.chatandroid.ui.component_base
 
 import android.annotation.SuppressLint
 import android.content.Intent
@@ -11,7 +11,6 @@ import android.os.Message
 import android.view.WindowManager
 import android.widget.TextView
 import com.example.chatandroid.R
-import org.w3c.dom.Text
 
 class SplashActivity : AppCompatActivity() {
     @SuppressLint("MissingInflatedId")

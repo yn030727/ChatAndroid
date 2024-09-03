@@ -21,7 +21,7 @@
         </service>
 
         <activity
-            android:name=".ui.SplashActivity"
+            android:name=".ui.component_base.SplashActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -34,7 +34,7 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".ui.MainActivity"
+            android:name=".ui.component_base.MainActivity"
             android:exported="true">
             <meta-data
                 android:name="android.app.lib_name"

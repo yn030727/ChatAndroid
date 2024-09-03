@@ -1,26 +1,19 @@
-package com.example.chatandroid.ui.chat
+package com.example.chatandroid.ui.component_androidbase
 
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.example.chatandroid.R
 
-class ChatFragment(contentLayoutId: Int) : Fragment(contentLayoutId) {
-    val TAG: String = "Ning_ChatFragment"
-
-
+class TabFragmentThird : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        var view = inflater.inflate(R.layout.fragment_chat , container , false)
-        Log.d(TAG, "onCreateView")
+        var view = inflater.inflate(R.layout.fragment_androidbase_tab_third , container , false)
         return view
     }
-
-
 }
