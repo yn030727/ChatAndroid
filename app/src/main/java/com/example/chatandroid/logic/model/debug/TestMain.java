@@ -101,9 +101,10 @@ public class TestMain {
         }).start();
     }
 
+    public static synchronized void setCount(){
+        int[] array = new int[10];
+
+    }
 }
-
-
-
 
 

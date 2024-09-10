@@ -21,6 +21,7 @@ import com.example.chatandroid.ui.component_individual.IndividualFragment
 //View界面(只负责UI的展示)
 //1. 初始化UI
 //2. 这只点击底部导航栏的动画切换效果(具体方法：initButtonAnimation)
+//Beauty Code Forever
 
 
 class MainActivity : AppCompatActivity() {
@@ -71,7 +72,6 @@ class MainActivity : AppCompatActivity() {
         navigationChatBtn.playAnimation()   //初始化界面播放动画
         initFragment(chatFragment)  //初始化首界面
         startServiceByNetWork() //开启服务执行Android知识库的网络请求
-
 
 
         //1.点击事件切换Fragment
