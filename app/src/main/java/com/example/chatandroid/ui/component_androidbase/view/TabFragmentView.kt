@@ -1,4 +1,4 @@
-package com.example.chatandroid.ui.component_androidbase
+package com.example.chatandroid.ui.component_androidbase.view
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,13 +7,13 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.example.chatandroid.R
 
-class TabFragmentThird : Fragment() {
+class TabFragmentView : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        var view = inflater.inflate(R.layout.fragment_androidbase_tab_third , container , false)
+        var view = inflater.inflate(R.layout.fragment_androidbase_tab_view , container , false)
         return view
     }
 }

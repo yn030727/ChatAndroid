@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.component_base.MainActivity">
+    tools:context=".ui.component_base.view.MainActivity">
 
     <!--加载每一个Fragment的容器-->
     <FrameLayout

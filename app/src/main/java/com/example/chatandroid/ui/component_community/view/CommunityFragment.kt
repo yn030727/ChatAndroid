@@ -1,4 +1,4 @@
-package com.example.chatandroid.ui.component_community
+package com.example.chatandroid.ui.component_community.view
 
 import android.os.Bundle
 import android.view.LayoutInflater

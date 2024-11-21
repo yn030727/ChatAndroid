@@ -14,6 +14,10 @@ import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import java.util.concurrent.Executors
 
+/**
+ * @author ning
+ * 项目当中将Retrofit、Request、Call的创建进行了封装
+ */
 class NetworkRunnable(val name: String , val token: String , val androidDatabase: AndroidDatabase) : Runnable {
     val TAG = "Ning_NetworkRunnable"
     val cachedThreadPoll = Executors.newCachedThreadPool()

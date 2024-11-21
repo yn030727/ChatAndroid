@@ -1,4 +1,4 @@
-package com.example.chatandroid.ui.component_base
+package com.example.chatandroid.ui.component_base.view
 
 import android.annotation.SuppressLint
 import android.content.Intent
@@ -41,6 +41,10 @@ class SplashActivity : AppCompatActivity() {
         }
     }
 
-
+//    override fun onSaveInstanceState(outState: Bundle) {
+//        super.onSaveInstanceState(outState)
+//        val textView1 = this.findViewById<TextView>(R.id.splash_application_name)
+//        outState.putInt("splash_textView_id", textView1.id)
+//    }
 
 }

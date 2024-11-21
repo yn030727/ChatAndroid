@@ -1,4 +1,4 @@
-package com.example.chatandroid.ui.component_chat;
+package com.example.chatandroid.ui.component_chat.debug;
 
 import java.util.ArrayList;
 

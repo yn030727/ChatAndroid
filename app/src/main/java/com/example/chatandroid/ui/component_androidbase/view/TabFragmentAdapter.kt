@@ -1,4 +1,4 @@
-package com.example.chatandroid.ui.component_androidbase
+package com.example.chatandroid.ui.component_androidbase.view
 
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager

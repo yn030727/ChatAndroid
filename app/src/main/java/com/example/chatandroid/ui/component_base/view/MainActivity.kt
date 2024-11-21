@@ -1,4 +1,4 @@
-package com.example.chatandroid.ui.component_base
+package com.example.chatandroid.ui.component_base.view
 
 import android.annotation.SuppressLint
 import android.content.Intent
@@ -12,9 +12,10 @@ import androidx.fragment.app.Fragment
 import com.airbnb.lottie.LottieAnimationView
 import com.example.chatandroid.R
 import com.example.chatandroid.logic.network.AndroidBaseService2
-import com.example.chatandroid.ui.component_androidbase.AndroidBaseFragment
-import com.example.chatandroid.ui.component_chat.ChatFragment
-import com.example.chatandroid.ui.component_community.CommunityFragment
+import com.example.chatandroid.ui.component_androidbase.view.AndroidBaseFragment
+import com.example.chatandroid.ui.component_base.viewmodel.MainActivityViewModel
+import com.example.chatandroid.ui.component_chat.view.ChatFragment
+import com.example.chatandroid.ui.component_community.view.CommunityFragment
 import com.example.chatandroid.ui.component_individual.IndividualFragment
 
 
@@ -139,14 +140,14 @@ class MainActivity : AppCompatActivity() {
     }
 
     //切换Fragment
-    fun initFragment(fragment: Fragment){
+    fun initFragment(fragment: Fragment) {
         val fragmentManager = supportFragmentManager
         val fragmentTransaction = fragmentManager.beginTransaction()
         fragmentTransaction.replace(R.id.fragment_container , fragment)
         fragmentTransaction.commit()
     }
     //开启服务器执行网络请求
-    fun startServiceByNetWork(){
+    fun startServiceByNetWork() {
         Log.d(TAG, "startServiceByNetWork")
         var intent = Intent(this@MainActivity , AndroidBaseService2::class.java)
         startService(intent)

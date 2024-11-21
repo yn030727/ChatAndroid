@@ -8,9 +8,9 @@ import androidx.room.PrimaryKey
 data class AndroidBaseModel(
 
     @PrimaryKey
-    @ColumnInfo(name = "name" , typeAffinity = ColumnInfo.TEXT)
-    val name: String ,
-    @ColumnInfo(name = "content" , typeAffinity = ColumnInfo.TEXT)
+    @ColumnInfo(name = "name", typeAffinity = ColumnInfo.TEXT)
+    val name: String,
+    @ColumnInfo(name = "content", typeAffinity = ColumnInfo.TEXT)
     val content: String
-    ) {
+) {
 }
