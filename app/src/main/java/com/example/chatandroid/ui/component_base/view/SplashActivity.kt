@@ -41,10 +41,11 @@ class SplashActivity : AppCompatActivity() {
         }
     }
 
-//    override fun onSaveInstanceState(outState: Bundle) {
-//        super.onSaveInstanceState(outState)
-//        val textView1 = this.findViewById<TextView>(R.id.splash_application_name)
-//        outState.putInt("splash_textView_id", textView1.id)
-//    }
+    override fun onSaveInstanceState(outState: Bundle) {
+        //for test
+        super.onSaveInstanceState(outState)
+        val textView1 = this.findViewById<TextView>(R.id.splash_application_name)
+        outState.putInt("splash_textView_id", textView1.id)
+    }
 
 }
