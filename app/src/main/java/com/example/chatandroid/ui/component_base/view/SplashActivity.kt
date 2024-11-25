@@ -8,6 +8,7 @@ import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
 import android.os.Message
+import android.util.Log
 import android.view.WindowManager
 import android.widget.TextView
 import com.example.chatandroid.R
@@ -46,5 +47,9 @@ class SplashActivity : AppCompatActivity() {
 //        val textView1 = this.findViewById<TextView>(R.id.splash_application_name)
 //        outState.putInt("splash_textView_id", textView1.id)
 //    }
+
+    fun testForGit(master: Int) {
+        Log.d("develop/master", "test for master")
+    }
 
 }
