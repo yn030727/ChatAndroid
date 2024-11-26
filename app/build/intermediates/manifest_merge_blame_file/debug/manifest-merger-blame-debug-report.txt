@@ -1,0 +1,119 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.chatandroid"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->/Users/ning/ChatAndroid/app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="33" />
+9-->/Users/ning/ChatAndroid/app/src/main/AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->/Users/ning/ChatAndroid/app/src/main/AndroidManifest.xml:5:5-67
+11-->/Users/ning/ChatAndroid/app/src/main/AndroidManifest.xml:5:22-64
+12
+13    <application
+13-->/Users/ning/ChatAndroid/app/src/main/AndroidManifest.xml:7:5-43:19
+14        android:allowBackup="true"
+14-->/Users/ning/ChatAndroid/app/src/main/AndroidManifest.xml:8:9-35
+15        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+15-->[androidx.core:core:1.7.0] /Users/ning/.gradle/caches/transforms-3/9df45a95e4e06a011612ef3452b5826c/transformed/core-1.7.0/AndroidManifest.xml:24:18-86
+16        android:dataExtractionRules="@xml/data_extraction_rules"
+16-->/Users/ning/ChatAndroid/app/src/main/AndroidManifest.xml:9:9-65
+17        android:debuggable="true"
+18        android:fullBackupContent="@xml/backup_rules"
+18-->/Users/ning/ChatAndroid/app/src/main/AndroidManifest.xml:10:9-54
+19        android:icon="@mipmap/ic_launcher"
+19-->/Users/ning/ChatAndroid/app/src/main/AndroidManifest.xml:11:9-43
+20        android:label="@string/app_name"
+20-->/Users/ning/ChatAndroid/app/src/main/AndroidManifest.xml:12:9-41
+21        android:roundIcon="@mipmap/ic_launcher_round"
+21-->/Users/ning/ChatAndroid/app/src/main/AndroidManifest.xml:13:9-54
+22        android:supportsRtl="true"
+22-->/Users/ning/ChatAndroid/app/src/main/AndroidManifest.xml:14:9-35
+23        android:testOnly="true"
+24        android:theme="@style/Theme.ChatAndroid" >
+24-->/Users/ning/ChatAndroid/app/src/main/AndroidManifest.xml:15:9-49
+25        <service
+25-->/Users/ning/ChatAndroid/app/src/main/AndroidManifest.xml:17:9-21:19
+26            android:name="com.example.chatandroid.logic.network.AndroidBaseService2"
+26-->/Users/ning/ChatAndroid/app/src/main/AndroidManifest.xml:18:13-62
+27            android:enabled="true"
+27-->/Users/ning/ChatAndroid/app/src/main/AndroidManifest.xml:19:13-35
+28            android:exported="true" >
+28-->/Users/ning/ChatAndroid/app/src/main/AndroidManifest.xml:20:13-36
+29        </service>
+30
+31        <activity
+31-->/Users/ning/ChatAndroid/app/src/main/AndroidManifest.xml:23:9-35:20
+32            android:name="com.example.chatandroid.ui.component_base.view.SplashActivity"
+32-->/Users/ning/ChatAndroid/app/src/main/AndroidManifest.xml:24:13-66
+33            android:exported="true" >
+33-->/Users/ning/ChatAndroid/app/src/main/AndroidManifest.xml:25:13-36
+34            <intent-filter>
+34-->/Users/ning/ChatAndroid/app/src/main/AndroidManifest.xml:26:13-30:29
+35                <action android:name="android.intent.action.MAIN" />
+35-->/Users/ning/ChatAndroid/app/src/main/AndroidManifest.xml:27:17-69
+35-->/Users/ning/ChatAndroid/app/src/main/AndroidManifest.xml:27:25-66
+36
+37                <category android:name="android.intent.category.LAUNCHER" />
+37-->/Users/ning/ChatAndroid/app/src/main/AndroidManifest.xml:29:17-77
+37-->/Users/ning/ChatAndroid/app/src/main/AndroidManifest.xml:29:27-74
+38            </intent-filter>
+39
+40            <meta-data
+40-->/Users/ning/ChatAndroid/app/src/main/AndroidManifest.xml:32:13-34:36
+41                android:name="android.app.lib_name"
+41-->/Users/ning/ChatAndroid/app/src/main/AndroidManifest.xml:33:17-52
+42                android:value="" />
+42-->/Users/ning/ChatAndroid/app/src/main/AndroidManifest.xml:34:17-33
+43        </activity>
+44        <activity
+44-->/Users/ning/ChatAndroid/app/src/main/AndroidManifest.xml:36:9-42:20
+45            android:name="com.example.chatandroid.ui.component_base.view.MainActivity"
+45-->/Users/ning/ChatAndroid/app/src/main/AndroidManifest.xml:37:13-64
+46            android:exported="true" >
+46-->/Users/ning/ChatAndroid/app/src/main/AndroidManifest.xml:38:13-36
+47            <meta-data
+47-->/Users/ning/ChatAndroid/app/src/main/AndroidManifest.xml:32:13-34:36
+48                android:name="android.app.lib_name"
+48-->/Users/ning/ChatAndroid/app/src/main/AndroidManifest.xml:33:17-52
+49                android:value="" />
+49-->/Users/ning/ChatAndroid/app/src/main/AndroidManifest.xml:34:17-33
+50        </activity>
+51
+52        <service
+52-->[androidx.room:room-runtime:2.5.2] /Users/ning/.gradle/caches/transforms-3/a774221b7a31a6a60f7b9ef92ff8b01a/transformed/room-runtime-2.5.2/AndroidManifest.xml:24:9-28:63
+53            android:name="androidx.room.MultiInstanceInvalidationService"
+53-->[androidx.room:room-runtime:2.5.2] /Users/ning/.gradle/caches/transforms-3/a774221b7a31a6a60f7b9ef92ff8b01a/transformed/room-runtime-2.5.2/AndroidManifest.xml:25:13-74
+54            android:directBootAware="true"
+54-->[androidx.room:room-runtime:2.5.2] /Users/ning/.gradle/caches/transforms-3/a774221b7a31a6a60f7b9ef92ff8b01a/transformed/room-runtime-2.5.2/AndroidManifest.xml:26:13-43
+55            android:exported="false" />
+55-->[androidx.room:room-runtime:2.5.2] /Users/ning/.gradle/caches/transforms-3/a774221b7a31a6a60f7b9ef92ff8b01a/transformed/room-runtime-2.5.2/AndroidManifest.xml:27:13-37
+56
+57        <provider
+57-->[androidx.emoji2:emoji2:1.0.0] /Users/ning/.gradle/caches/transforms-3/890798958823e1ddb9191fb82e555b3f/transformed/emoji2-1.0.0/AndroidManifest.xml:26:9-34:20
+58            android:name="androidx.startup.InitializationProvider"
+58-->[androidx.emoji2:emoji2:1.0.0] /Users/ning/.gradle/caches/transforms-3/890798958823e1ddb9191fb82e555b3f/transformed/emoji2-1.0.0/AndroidManifest.xml:27:13-67
+59            android:authorities="com.example.chatandroid.androidx-startup"
+59-->[androidx.emoji2:emoji2:1.0.0] /Users/ning/.gradle/caches/transforms-3/890798958823e1ddb9191fb82e555b3f/transformed/emoji2-1.0.0/AndroidManifest.xml:28:13-68
+60            android:exported="false" >
+60-->[androidx.emoji2:emoji2:1.0.0] /Users/ning/.gradle/caches/transforms-3/890798958823e1ddb9191fb82e555b3f/transformed/emoji2-1.0.0/AndroidManifest.xml:29:13-37
+61            <meta-data
+61-->[androidx.emoji2:emoji2:1.0.0] /Users/ning/.gradle/caches/transforms-3/890798958823e1ddb9191fb82e555b3f/transformed/emoji2-1.0.0/AndroidManifest.xml:31:13-33:52
+62                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+62-->[androidx.emoji2:emoji2:1.0.0] /Users/ning/.gradle/caches/transforms-3/890798958823e1ddb9191fb82e555b3f/transformed/emoji2-1.0.0/AndroidManifest.xml:32:17-75
+63                android:value="androidx.startup" />
+63-->[androidx.emoji2:emoji2:1.0.0] /Users/ning/.gradle/caches/transforms-3/890798958823e1ddb9191fb82e555b3f/transformed/emoji2-1.0.0/AndroidManifest.xml:33:17-49
+64            <meta-data
+64-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/ning/.gradle/caches/transforms-3/98559743d14cc19cc4c8b0530b0c3c74/transformed/lifecycle-process-2.4.0/AndroidManifest.xml:31:13-33:52
+65                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+65-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/ning/.gradle/caches/transforms-3/98559743d14cc19cc4c8b0530b0c3c74/transformed/lifecycle-process-2.4.0/AndroidManifest.xml:32:17-78
+66                android:value="androidx.startup" />
+66-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/ning/.gradle/caches/transforms-3/98559743d14cc19cc4c8b0530b0c3c74/transformed/lifecycle-process-2.4.0/AndroidManifest.xml:33:17-49
+67        </provider>
+68    </application>
+69
+70</manifest>

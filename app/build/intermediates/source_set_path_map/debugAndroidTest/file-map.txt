@@ -1,0 +1,7 @@
+com.example.chatandroid.test.app-androidTest-0 /Users/ning/ChatAndroid/app/build/generated/res/resValues/androidTest/debug
+com.example.chatandroid.test.app-androidTest-1 /Users/ning/ChatAndroid/app/build/generated/res/rs/androidTest/debug
+com.example.chatandroid.test.app-mergeDebugAndroidTestResources-2 /Users/ning/ChatAndroid/app/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/merged.dir
+com.example.chatandroid.test.app-mergeDebugAndroidTestResources-3 /Users/ning/ChatAndroid/app/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/stripped.dir
+com.example.chatandroid.test.app-merged_res-4 /Users/ning/ChatAndroid/app/build/intermediates/merged_res/debugAndroidTest
+com.example.chatandroid.test.app-androidTest-5 /Users/ning/ChatAndroid/app/src/androidTest/res
+com.example.chatandroid.test.app-androidTestDebug-6 /Users/ning/ChatAndroid/app/src/androidTestDebug/res
