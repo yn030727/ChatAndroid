@@ -47,7 +47,9 @@ class SplashActivity : AppCompatActivity() {
 //        val textView1 = this.findViewById<TextView>(R.id.splash_application_name)
 //        outState.putInt("splash_textView_id", textView1.id)
 //    }
+
     fun testForGit(value: Int) {
         Log.d("develop/test1.0", "git for cherry-pick")
+        Log.d("develop/1.0", "git for git init wrong")
     }
 }
