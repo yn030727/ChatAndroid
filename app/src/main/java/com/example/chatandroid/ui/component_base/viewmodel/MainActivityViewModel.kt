@@ -6,6 +6,7 @@ import androidx.lifecycle.ViewModel
 class MainActivityViewModel(num:Int?, number:Int) : ViewModel() {
     constructor(num: Int) : this(num, 0) {
         println("num: $num , number: 0")
+
     }
     init {
         //num = 1
