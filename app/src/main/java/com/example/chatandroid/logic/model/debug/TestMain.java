@@ -4,6 +4,7 @@ import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.ReentrantLock;
 
 public class TestMain {
+    private String TAG = "Git Commit -V";
     static int count = 1;
     static int turn1 = 1;
 
