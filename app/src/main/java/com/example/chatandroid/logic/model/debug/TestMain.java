@@ -9,6 +9,7 @@ public class TestMain {
     static int count = 1;
     static int turn1 = 1;
 
+
     public static void main(String[] args) {
         System.out.println(label1);
         System.out.println(label2);
