@@ -14,7 +14,6 @@ class MainActivityViewModel(num:Int?, number:Int) : ViewModel() {
         println("num: $num, number: $number")
     }
 
-
     var testLiveData: MutableLiveData<Int>? = null
 
     fun setTestLiveData(num: Int): MutableLiveData<Int> { //非空断言工具
