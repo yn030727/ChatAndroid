@@ -4,14 +4,11 @@ import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.ReentrantLock;
 
 public class TestMain {
-    private final static String label1 = "Git Commit -V 3";
-    private final static String label2 = "Git Commit --amend";
+    private String TAG = "Git Revert1.0";
     static int count = 1;
     static int turn1 = 1;
 
     public static void main(String[] args) {
-        System.out.println(label1);
-        System.out.println(label2);
         ReentrantLock lock = new ReentrantLock();
         Condition condition1 = lock.newCondition();
         Condition condition2 = lock.newCondition();
